@@ -2,10 +2,16 @@
 An extension of C++, meant for easier to learn coding. Built on PYTHON.
 
 # TO INSTALL
-Cut epp.py
+
+> Disclaimer: This is for linux only. I'll update for Windows eventually.
+
+Cut EPP folder
+
 Find python folder
-Go to usr/bin/env
-Paste epp.py
+
+Go to usr/bin/lib
+
+Paste EPP folder
 
 It should work after that. To compile epp code, do
 >>> epp filename.epp
