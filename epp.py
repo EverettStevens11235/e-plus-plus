@@ -6,6 +6,7 @@ variables = {}
 def lexer(e):
 	tokens = []
 	types = ['str', 'num', 'bool', 'setting']
+	operators = {"+": "ADD", "-": "SUBTRACT", "*": "MULTIPLY", "/":"DIVIDE", "^": "POWER"}
 	tok = ""
 	lFVN = False
 	lFES = False
@@ -76,7 +77,7 @@ def lexer(e):
 		elif tok == "true" or tok == "false":
 			tokens.append(f"BOOL: {tok.upper()}")
 			tok = ""
-		elif tok == "-" or tok[-1:] == '-':
+		elif tok == "~" or tok[-1:] == '~':
 			if iN == True:
 				iN = False
 				tokens.append(f"NUMBER: {tmp}")
@@ -95,6 +96,8 @@ def lexer(e):
 			lFCP = False
 			tokens.append("CLOSE")
 			tok = ""
+		elif tok in operators:
+			tokens.append(operators[tok])
 		else:
 			if iS == True:
 				string+=tok
@@ -114,11 +117,13 @@ def lexer(e):
 				
 def parser(toks):
 	i = 0
+	v = 0
 	types = ['STR','NUM','BOOL']
 	wFS = False
 	wFN = False
 	wFB = False
 	lFN = True
+	tmp = None
 	name = ""
 	while i < len(toks):
 		# print(toks[i])
@@ -156,6 +161,18 @@ def parser(toks):
 				variables[name] = toks[i][6:]
 				wFB = False
 				name = ""
+			elif toks[i+1] == "ADD":
+				print(float(toks[i][8:])+float(toks[i+2][8:]))
+			elif toks[i+1] == "SUBTRACT":
+				print(float(toks[i][8:])-float(toks[i+2][8:]))
+			elif toks[i+1] == "MULTIPLY":
+				print(float(toks[i][8:])*float(toks[i+2][8:]))
+			elif toks[i+1] == "DIVIDE":
+				print(float(toks[i][8:])/float(toks[i+2][8:]))
+			elif toks[i+1] == "POWER":
+				e = float(toks[i][8:])
+				f = float(toks[i+2][8:])
+				print(pow(e,f))
 			else:
 				pass
 		i+=1
