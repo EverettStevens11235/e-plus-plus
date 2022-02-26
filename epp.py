@@ -109,6 +109,11 @@ def lexer(e):
 				if iS != True:
 					pVN += tok
 				tok = ""
+			elif iN == True:
+				iN = False
+				tokens.append(f"NUMBER: {tmp}")
+				tmp = ""
+				tok = ""
 			else:
 				pass
 	tokens.append("EOF")
@@ -195,7 +200,7 @@ def epp(fil = None):
 			a = lexer(e)
 			b = parser(a)
 		except:
-			print("File not found. Maybe you missed the extension or mispelled the name?")
+			exit("File not found. Maybe you missed the extension or mispelled the name?")
 
 if __name__ == "__main__":
 	if len(sys.argv) == 2:
