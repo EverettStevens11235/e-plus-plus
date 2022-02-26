@@ -2,10 +2,10 @@
 A programming language, meant for easier to learn coding. Built on PYTHON.
 
 To compile epp code, do
->>> epp filename.epp
+> python3 epp.py filename.epp
 
 To open interperator, do 
->>> epp
+> python3 epp.py
 
 Thank you,
   ~ Everett Stevens
