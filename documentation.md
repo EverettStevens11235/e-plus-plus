@@ -28,10 +28,11 @@ EX:
 ### Numbers
 Numbers are made with **digits 0-9**, and **decimals**.
 
-> Warning! You must add a *~* symbol if you are finishing a line with a number!!
+==Warning! You must add a *~* symbol if you are finishing a line with a number!!==
 
 EX:
 > var num sub = 1~
+
 > var num decSub = 1.5~
 
 ### Booleans
@@ -39,6 +40,7 @@ Booleans are TRUE or FALSE. They currently have no use, so don't use them.
 
 EX:
 > var bool tru = true
+
 > var bool fals = false
 
 # Arithmetic
