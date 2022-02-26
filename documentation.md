@@ -26,13 +26,13 @@ EX:
 > var str main = 'hey'
 
 ### Numbers
-Numbers are made with **digits 0-9**, and **decimals**. You currently can't do arithmetic, but I will add that in a future version.
+Numbers are made with **digits 0-9**, and **decimals**.
 
-Warning! You must add a dash if you are finishing a line with a number!!
+> Warning! You must add a *~* symbol if you are finishing a line with a number!!
 
 EX:
-> var num sub = 1-
-> var num decSub = 1.5-
+> var num sub = 1~
+> var num decSub = 1.5~
 
 ### Booleans
 Booleans are TRUE or FALSE. They currently have no use, so don't use them.
@@ -41,4 +41,16 @@ EX:
 > var bool tru = true
 > var bool fals = false
 
-That's currently all.
+# Arithmetic
+Arithmetic just does the math and prints it.
+Nothing really exciting yet.
+
+> 1 + 1~
+
+`Output = 2`
+
+> 1 - 0.5~
+
+`Output = 0.5`
+
+You get the idea.
