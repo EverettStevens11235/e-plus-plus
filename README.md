@@ -1,5 +1,5 @@
 # e-plus-plus
-An extension of C++, meant for easier to learn coding. Built on PYTHON.
+A programming language, meant for easier to learn coding. Built on PYTHON.
 
 To compile epp code, do
 >>> epp filename.epp
