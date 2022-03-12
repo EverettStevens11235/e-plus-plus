@@ -12,6 +12,10 @@ You don't have to match the quotation marks, so
 
 would be fine.
 
+Commenting is easy.
+
+> % Hey! This is a **comment!** %
+
 ## Variables
 There are ~~two~~ **three** basic types of variables.
 
@@ -28,11 +32,13 @@ EX:
 ### Numbers
 Numbers are made with **digits 0-9**, and **decimals**.
 
-> Warning! You must add a *~* symbol or a space if you are finishing a line with a number!!
+Examples of numbers are:
 
-EX:
-> var num sub = 1~
-> var num decSub = 1.5~
+> var num f = 1
+> f# + 1
+> OUTPUT: 2.0
+
+***WARNING! IF YOU WANT TO REFERENCE/USE ARITHMETIC ON A VARIABLE, PUT A SHARP SIGN AFTER IT UNLESS YOU'RE IN A LOG STATEMENT.***
 
 ### Booleans
 Booleans are TRUE or FALSE. They currently have no use, so don't use them.
@@ -40,18 +46,6 @@ Booleans are TRUE or FALSE. They currently have no use, so don't use them.
 EX:
 > var bool tru = true
 > var bool fals = false
-
-# Arithmetic
-Arithmetic just does the math and prints it.
-Nothing really exciting yet.
-
-> 1 + 1~
-
-`Output = 2`
-
-> 1 - 0.5~
-
-`Output = 0.5`
 
 You get the idea.
 
