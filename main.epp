@@ -1,1 +1,15 @@
-var log hi = 1
+% Hello! This is a script to run a Hello World file and some extras! %
+
+var num poop = 1
+var num idiot = 2
+var num stop = 3
+
+var str main = "Hello world!"
+
+log(poop)
+log(idiot)
+log(stop)
+
+stop# + 0
+
+log(main)
